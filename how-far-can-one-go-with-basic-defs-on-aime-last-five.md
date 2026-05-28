@@ -10,6 +10,8 @@ tags:
 description: We will compare different solutions to 2026 AIME I, Problem 13, including those using advanced knowledge like finite fields, and those starting from the very elementary approaches. We will point out the connections behind them and share our thoughts from a pedagogical point of view.
 ---
 
+(~10 min. read)
+
 Last week, we posted [a short video](https://youtu.be/Ql6gESJ0OO0) on an elementary approach to [2026 AIME I, Problem 13](https://artofproblemsolving.com/wiki/index.php?title=2026_AIME_I_Problems/Problem_13#Problem). In this blog, we will discuss our motivation to create such a video, other approches to the problem, and our learnings on how we shall teach our students.
 
 ## Motivation
@@ -89,7 +91,7 @@ The clean, short solutions that use advanced ideas can be grouped into two types
 1. Taking care of $S_r$ as a whole with generating polynomials
 2. Dealing with each term in $S_r$ individually (like our elementray approach)
 
-For Type 1, we are essentially looking at $(1+x)^n$ over the finite field $\mathbb{F}_p$, and further reduce it by modulo $x^{p-1}-1$. Then claiming that $(1+x)^n$ equals $(1+x)^{462}$ under such equivalence relations. This can be formulated using Fermat's little Theorem. But we are still at some risk of giving a hand-waving proof without rigorous abstract algebra.
+For Type 1, we are essentially looking at $(1+x)^n$ over the finite field $\mathbb{F}_p$, and further reduce it by modulo $x^{p-1}-1$. Then claiming that $(1+x)^n$ equals $(1+x)^{462}$ under such equivalence relations. This can be formulated using Fermat's little Theorem. But we are still at risk of giving a hand-waving proof without rigorous abstract algebra.
 
 For Type 2, we are using tools like [Lucas's Theorem](https://en.wikipedia.org/wiki/Lucas%27s_theorem) to reduce every summand to a smaller number, then investgating their sum. Our approach indeed gives an incomplete proof of the Lucas's Theorem, enough for this problem's purpose.
 
